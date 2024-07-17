@@ -470,6 +470,14 @@ ALTER TABLE ONLY public.star
 -- Name: galaxy galaxy_star_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
 --
 
+ALTER TABLE ONLY public.more_info
+    ADD CONSTRAINT more_info_pkey PRIMARY KEY (more_info_id);
+
+
+--
+-- Name: more_info more_info_key; Type: CONSTRAINT; Schema: public; Owner: freedcodecamp
+--
+
 ALTER TABLE ONLY public.galaxy
     ADD CONSTRAINT galaxy_star_id_fkey FOREIGN KEY (star_id) REFERENCES public.star(star_id);
 
